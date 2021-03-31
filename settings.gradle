@@ -1,1 +1,2 @@
-include ':app', ':speedlib'
+include ':app'
+include ':speedlib'

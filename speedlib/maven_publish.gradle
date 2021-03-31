@@ -1,0 +1,22 @@
+apply plugin: "maven-publish"
+afterEvaluate {
+    publishing {
+        repositories {
+            maven {
+                url "https://nexus.xxx.com/repository/maven-releases/"
+                credentials {
+                    username "xxx"
+                    password "xxx"
+                }
+            }
+        }
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId "com.shuangyangad"
+                artifactId = "android-speed"
+                version = "latest-RELEASE"
+            }
+        }
+    }
+}

@@ -1,9 +1,11 @@
 package com.tools.speedhelper;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.tools.speedlib.SpeedManager;
 import com.tools.speedlib.listener.NetDelayListener;
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         tx_up.setText(upResult[0] + upResult[1]);
                     }
                 })
-                .setPindCmd("59.61.92.196")
+                .setPindCmd("baidu.com")
                 .setSpeedCount(6)
                 .setSpeedTimeOut(2000)
                 .builder();

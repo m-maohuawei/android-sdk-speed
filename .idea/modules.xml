@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpeedHelper.iml" filepath="$PROJECT_DIR$/SpeedHelper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/speedlib/speedlib.iml" filepath="$PROJECT_DIR$/speedlib/speedlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/speedLib.iml" filepath="$PROJECT_DIR$/.idea/modules/speedLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/speedLib.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/speedLib.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/speedlib/speedLib.speedlib.iml" filepath="$PROJECT_DIR$/.idea/modules/speedlib/speedLib.speedlib.iml" />
     </modules>
   </component>
 </project>
