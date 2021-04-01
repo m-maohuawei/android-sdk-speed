@@ -1,5 +1,6 @@
 package com.tools.speedhelper;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import android.view.View;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tx_down;
     private TextView tx_up;
     SpeedManager speedManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         tx_down = (TextView) findViewById(R.id.tx_down);
         tx_up = (TextView) findViewById(R.id.tx_up);
 
+
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void start(){
+    private void start() {
         speedManager = new SpeedManager.Builder()
                 .setNetDelayListener(new NetDelayListener() {
                     @Override

@@ -31,7 +31,8 @@ public class AwesomeSpeedView extends Speedometer {
             trianglesPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private RectF speedometerRect = new RectF();
 
-    private int speedometerColor = Color.parseColor("#007AFF");
+    // 背景颜色
+    private int speedometerColor = Color.parseColor("#0072ff");
 
     public AwesomeSpeedView(Context context) {
         this(context, null);
@@ -62,12 +63,13 @@ public class AwesomeSpeedView extends Speedometer {
     protected SpeedometerDefault getSpeedometerDefault() {
         SpeedometerDefault speedometerDefault = new SpeedometerDefault();
         speedometerDefault.indicator = new TriangleIndicator(getContext())
-                .setIndicatorWidth(dpTOpx(25f))
-                .setIndicatorColor(Color.parseColor("#007AFF"));
+                .setIndicatorWidth(dpTOpx(30f))
+                // 指示箭头颜色
+                .setIndicatorColor(Color.parseColor("#ffff00"));
         speedometerDefault.startDegree = 135;
         speedometerDefault.endDegree = 135+320;
         speedometerDefault.speedometerWidth = dpTOpx(60);
-        speedometerDefault.backgroundCircleColor = Color.parseColor("#212121");
+        speedometerDefault.backgroundCircleColor = Color.parseColor("#ffff00");
         speedometerDefault.backgroundCircleColor = Color.parseColor("#212121");
         return speedometerDefault;
     }
@@ -76,8 +78,10 @@ public class AwesomeSpeedView extends Speedometer {
         markPaint.setStyle(Paint.Style.STROKE);
         textPaint.setTextAlign(Paint.Align.CENTER);
         ringPaint.setStyle(Paint.Style.STROKE);
-        textPaint.setTextSize(dpTOpx(10));
-        trianglesPaint.setColor(Color.parseColor("#3949ab"));
+        // 字体大小
+        textPaint.setTextSize(dpTOpx(18));
+        // 最外边 小三角
+        trianglesPaint.setColor(Color.parseColor("#ffff00"));
     }
 
     private void initAttributeSet(Context context, AttributeSet attrs) {
