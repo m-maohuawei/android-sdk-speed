@@ -1,5 +1,26 @@
 # speedLib
 网络测速 包含 网络延时,上下行速度,基于OkHttp3.0
+
+
+
+```groovy
+allprojects {
+    repositories {
+       maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+
+
+```groovy
+dependencies {
+    implementation 'com.github.m-maohuawei:android-sdk-speed:Tag'
+}
+```
+
+
+
 ```
 使用方式 :
 (1)设置网络延时的监听 : setNetDelayListener
@@ -37,3 +58,7 @@
         speedManager.startSpeed();
 
 ```
+
+
+
+[![Release](https://jitpack.io/v/m-maohuawei/android-sdk-speed.svg)](https://jitpack.io/#m-maohuawei/android-sdk-speed)
